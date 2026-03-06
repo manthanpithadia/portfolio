@@ -34,7 +34,7 @@ const Kanhala = () => {
 
             {/* 1. Project Overview */}
             <div>
-              <h2 className="text-3xl font-bold tracking-tight text-slate-heading mb-6">1. Project Overview</h2>
+              <h2 className="text-3xl font-bold tracking-tight text-slate-heading mb-6">Project Overview</h2>
               <div className="prose prose-slate max-w-none text-slate-600">
                 <p><strong>Purpose of the Product:</strong> The platform was built to provide structured French language courses online, allow students to easily enroll in courses, manage classes, resources, and payments in one centralized system, and enable instructors to deliver digital learning efficiently.</p>
                 <p>Kanhalo focuses on language education accessibility, allowing students to learn French remotely while managing lessons, schedules, and course materials through a single platform.</p>
@@ -43,7 +43,7 @@ const Kanhala = () => {
 
             {/* 2. Problem Statement & Target Users */}
             <div>
-              <h2 className="text-3xl font-bold tracking-tight text-slate-heading mb-6">2. Problem Statement</h2>
+              <h2 className="text-3xl font-bold tracking-tight text-slate-heading mb-6">Problem Statement</h2>
               <div className="grid md:grid-cols-2 gap-8">
                 <div className="bg-slate-50 p-6 rounded-2xl border border-slate-100">
                   <h3 className="font-bold text-lg mb-3">The Problem</h3>
@@ -68,7 +68,7 @@ const Kanhala = () => {
 
             {/* 3. Solution */}
             <div>
-              <h2 className="text-3xl font-bold tracking-tight text-slate-heading mb-6">3. Solution</h2>
+              <h2 className="text-3xl font-bold tracking-tight text-slate-heading mb-6">Solution</h2>
               <p className="text-slate-600 mb-6">
                 Kanhalo was developed as a centralized online learning platform that integrates course management, student enrollment, payment processing, learning resources, and instructor scheduling. Students can browse courses, enroll, pay online, and access learning materials in one place.
               </p>
@@ -88,7 +88,7 @@ const Kanhala = () => {
 
             {/* 4. Key Features */}
             <div>
-              <h2 className="text-3xl font-bold tracking-tight text-slate-heading mb-6">4. Key Features</h2>
+              <h2 className="text-3xl font-bold tracking-tight text-slate-heading mb-6">Key Features</h2>
               <div className="grid md:grid-cols-2 gap-6">
                 <div className="border border-slate-200 rounded-xl p-6">
                   <span className="material-symbols-outlined text-primary mb-4 text-3xl">menu_book</span>
@@ -126,7 +126,7 @@ const Kanhala = () => {
             <div>
               <div className="flex items-center justify-between mb-6">
                 <h2 className="text-3xl font-bold tracking-tight text-slate-heading">
-                  8. UI Design & Key Screens
+                  UI Design & Key Screens
                 </h2>
               </div>
               <div className="grid md:grid-cols-2 gap-12" style={{marginBottom:"2rem"}}>
@@ -176,7 +176,7 @@ const Kanhala = () => {
             </div>
             {/* 6. System Architecture */}
             <div>
-              <h2 className="text-3xl font-bold tracking-tight text-slate-heading mb-6">6. System Architecture</h2>
+              <h2 className="text-3xl font-bold tracking-tight text-slate-heading mb-6">System Architecture</h2>
               <div className="p-8 border border-slate-200 rounded-2xl bg-slate-50 text-center">
                 <div className="flex flex-col items-center justify-center gap-4">
                   <div className="w-full max-w-sm p-4 bg-white border border-slate-200 rounded-xl font-bold shadow-sm">Frontend Website (Student Browser)</div>
@@ -191,7 +191,7 @@ const Kanhala = () => {
 
             {/* 7. Technical Challenges */}
             <div>
-              <h2 className="text-3xl font-bold tracking-tight text-slate-heading mb-6">7. Technical Challenges</h2>
+              <h2 className="text-3xl font-bold tracking-tight text-slate-heading mb-6">Technical Challenges</h2>
               <div className="space-y-6">
                 <div className="bg-white border text-left border-slate-200 p-6 rounded-xl">
                   <h3 className="font-bold text-lg mb-2 text-primary">Challenge 1 — Course Access Control</h3>
@@ -257,7 +257,7 @@ const Kanhala = () => {
 
             {/* 12. Tech Stack */}
             <div>
-              <h2 className="text-3xl font-bold tracking-tight text-slate-heading mb-6 text-center">12. Technology Stack</h2>
+              <h2 className="text-3xl font-bold tracking-tight text-slate-heading mb-6 text-center">Technology Stack</h2>
               <div className="flex flex-wrap justify-center gap-4">
                 <span className="px-4 py-2 bg-slate-100 rounded-full text-sm font-medium border border-slate-200">WordPress CMS</span>
                 <span className="px-4 py-2 bg-slate-100 rounded-full text-sm font-medium border border-slate-200">Tutor LMS</span>

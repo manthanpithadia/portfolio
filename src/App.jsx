@@ -27,10 +27,7 @@ const App = () => {
         {/* Top Navigation */}
         <header className="sticky top-0 z-50 w-full border-b border-gray-200 bg-white/80 backdrop-blur-md">
           <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
-            <Link to="/" className="flex items-center gap-3">            
-               <div className="h-10 w-10 overflow-hidden rounded-full border-2 border-primary/20 bg-gray-100">
-                <img className="h-full w-full object-cover scale-[1.1] origin-top" data-alt="Professional headshot of Manthan Pithadia" src={profile_pic} />
-              </div>
+            <Link to="/" className="flex items-center gap-3">                           
               <div>
                 <h2 className="text-heading-text text-lg font-bold leading-none tracking-tight">Manthan Pithadia</h2>
                 <p className="technical-label text-[10px] font-medium uppercase tracking-widest text-primary">MVP Architect</p>
