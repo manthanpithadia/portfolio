@@ -44,7 +44,7 @@ const MyTamilDate = () => {
             {/* 1. Project Overview */}
             <div>
               <h2 className="text-3xl font-bold tracking-tight text-slate-heading mb-6">
-                1. Project Overview
+                Project Overview
               </h2>
               <div className="prose prose-slate max-w-none text-slate-600">
                 <p>
@@ -66,7 +66,7 @@ const MyTamilDate = () => {
             {/* 2. Problem Statement & Target Users */}
             <div>
               <h2 className="text-3xl font-bold tracking-tight text-slate-heading mb-6">
-                2. Problem Statement
+                  Problem Statement
               </h2>
               <div className="grid md:grid-cols-2 gap-8">
                 <div className="bg-slate-50 p-6 rounded-2xl border border-slate-100">
@@ -127,7 +127,7 @@ const MyTamilDate = () => {
             {/* 3. Solution */}
             <div>
               <h2 className="text-3xl font-bold tracking-tight text-slate-heading mb-6">
-                3. Solution
+                Solution
               </h2>
               <p className="text-slate-600 mb-6">
                 To address these problems, MyTamilDate was designed as a
@@ -169,7 +169,7 @@ const MyTamilDate = () => {
             {/* 4. Key Features */}
             <div>
               <h2 className="text-3xl font-bold tracking-tight text-slate-heading mb-6">
-                4. Key Features
+                  Key Features
               </h2>
               <div className="grid md:grid-cols-2 gap-6">
                 <div className="border border-slate-200 rounded-xl p-6">
@@ -248,7 +248,7 @@ const MyTamilDate = () => {
             {/* 6. System Architecture */}
             <div>
               <h2 className="text-3xl font-bold tracking-tight text-slate-heading mb-6">
-                6. System Architecture
+                System Architecture
               </h2>
               <div className="p-8 border border-slate-200 rounded-2xl bg-slate-50 text-center">
                 <div className="flex flex-col items-center justify-center gap-4">
@@ -280,7 +280,7 @@ const MyTamilDate = () => {
             {/* 7. Technical Challenges */}
             <div>
               <h2 className="text-3xl font-bold tracking-tight text-slate-heading mb-6">
-                7. Technical Challenges
+                Technical Challenges
               </h2>
               <div className="space-y-6">
                 <div className="bg-white border text-left border-slate-200 p-6 rounded-xl">
@@ -329,7 +329,7 @@ const MyTamilDate = () => {
             <div>
               <div className="flex items-center justify-between mb-6">
                 <h2 className="text-3xl font-bold tracking-tight text-slate-heading">
-                  8. UI Design & Key Screens
+                  UI Design & Key Screens
                 </h2>
               </div>
               <div className="grid md:grid-cols-2 gap-12" style={{marginBottom:"2rem"}}>
