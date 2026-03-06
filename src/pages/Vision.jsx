@@ -31,7 +31,7 @@ const Vision = () => {
 
             {/* 1. Project Overview */}
             <div>
-              <h2 className="text-3xl font-bold tracking-tight text-slate-heading mb-6">1. Project Overview</h2>
+              <h2 className="text-3xl font-bold tracking-tight text-slate-heading mb-6">Project Overview</h2>
               <div className="prose prose-slate max-w-none text-slate-600">
                 <p><strong>Purpose of the Product:</strong> VISION was developed to improve the independence and accessibility of visually impaired users by enabling them to interact with their surroundings through AI-powered vision technologies and voice-based controls.</p>
                 <p>The application helps users read printed text in real time, detect nearby objects, navigate using voice guidance, and interact with the application hands-free. By combining computer vision, speech recognition, and navigation services, the app aims to significantly improve everyday accessibility.</p>
@@ -40,7 +40,7 @@ const Vision = () => {
 
             {/* 2. Problem Statement & Target Users */}
             <div>
-              <h2 className="text-3xl font-bold tracking-tight text-slate-heading mb-6">2. Problem Statement</h2>
+              <h2 className="text-3xl font-bold tracking-tight text-slate-heading mb-6">Problem Statement</h2>
               <div className="grid md:grid-cols-2 gap-8">
                 <div className="bg-slate-50 p-6 rounded-2xl border border-slate-100">
                   <h3 className="font-bold text-lg mb-3">The Problem</h3>
@@ -66,7 +66,7 @@ const Vision = () => {
 
             {/* 3. Solution */}
             <div>
-              <h2 className="text-3xl font-bold tracking-tight text-slate-heading mb-6">3. Solution</h2>
+              <h2 className="text-3xl font-bold tracking-tight text-slate-heading mb-6">Solution</h2>
               <p className="text-slate-600 mb-6">
                 VISION is an AI-powered assistive Android application integrating computer vision, speech recognition, and navigation services. Using the smartphone camera and AI models, it analyzes the environment and provides audio feedback to users.
               </p>
@@ -86,7 +86,7 @@ const Vision = () => {
 
             {/* 4. Key Features */}
             <div>
-              <h2 className="text-3xl font-bold tracking-tight text-slate-heading mb-6">4. Key Features</h2>
+              <h2 className="text-3xl font-bold tracking-tight text-slate-heading mb-6">Key Features</h2>
               <div className="grid md:grid-cols-2 gap-6">
                 <div className="border border-slate-200 rounded-xl p-6">
                   <span className="material-symbols-outlined text-primary mb-4 text-3xl">document_scanner</span>
@@ -110,11 +110,11 @@ const Vision = () => {
                 </div>
               </div>
             </div>
-{/* 8. UI Design & Key Screens */}
+            {/* UI Design & Key Screens */}
             <div>
               <div className="flex items-center justify-between mb-6">
                 <h2 className="text-3xl font-bold tracking-tight text-slate-heading">
-                  8. UI Design & Key Screens
+                  UI Design & Key Screens
                 </h2>
               </div>
 
@@ -150,7 +150,7 @@ const Vision = () => {
             </div>
             {/* 6. System Architecture */}
             <div>
-              <h2 className="text-3xl font-bold tracking-tight text-slate-heading mb-6">6. System Architecture</h2>
+              <h2 className="text-3xl font-bold tracking-tight text-slate-heading mb-6">System Architecture</h2>
               <div className="p-8 border border-slate-200 rounded-2xl bg-slate-50 text-center">
                 <div className="flex flex-col items-center justify-center gap-4">
                   <div className="w-full max-w-sm p-4 bg-white border border-slate-200 rounded-xl font-bold shadow-sm">Android App (Camera / Mic Input)</div>
@@ -165,7 +165,7 @@ const Vision = () => {
 
             {/* 7. Technical Challenges */}
             <div>
-              <h2 className="text-3xl font-bold tracking-tight text-slate-heading mb-6">7. Technical Challenges</h2>
+              <h2 className="text-3xl font-bold tracking-tight text-slate-heading mb-6">Technical Challenges</h2>
               <div className="space-y-6">
                 <div className="bg-white border text-left border-slate-200 p-6 rounded-xl">
                   <h3 className="font-bold text-lg mb-2 text-primary">Challenge 1 — Real-Time Image Processing</h3>
@@ -229,7 +229,7 @@ const Vision = () => {
 
             {/* 12. Tech Stack */}
             <div>
-              <h2 className="text-3xl font-bold tracking-tight text-slate-heading mb-6 text-center">12. Technology Stack</h2>
+              <h2 className="text-3xl font-bold tracking-tight text-slate-heading mb-6 text-center">Technology Stack</h2>
               <div className="flex flex-wrap justify-center gap-4">
                 <span className="px-4 py-2 bg-slate-100 rounded-full text-sm font-medium border border-slate-200">Android SDK (Java/Kotlin)</span>
                 <span className="px-4 py-2 bg-slate-100 rounded-full text-sm font-medium border border-slate-200">TensorFlow</span>
