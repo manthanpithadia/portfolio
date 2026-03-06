@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route, Link, useLocation } from 'react-router-dom';
 import { useEffect } from 'react';
-import profile_pic from '../src/assets/images/profile_pic_resized.png';
+import profile_pic from '../src/assets/images/profile_pic.png';
 
 const ScrollToTop = () => {
   const { pathname } = useLocation();

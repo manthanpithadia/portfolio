@@ -60,7 +60,7 @@ const Home = () => {
           </div>
           <div className="grid gap-8 lg:grid-cols-2">
             {/* Project 1 */}
-            <div className="group flex flex-col overflow-hidden rounded-xl bg-background-light shadow-sm transition-all hover:shadow-md">
+            <Link to="/mytamildate" className="block outline-none group flex flex-col overflow-hidden rounded-xl bg-background-light shadow-sm transition-all hover:shadow-xl hover:-translate-y-1">
               <div className="aspect-video w-full overflow-hidden">
                 <img className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" 
                   data-alt="Web application interface showing a social community platform dashboard" 
@@ -84,11 +84,11 @@ const Home = () => {
                   <span className="technical-label rounded bg-white px-2.5 py-1 text-[10px] font-bold text-main-text shadow-sm border border-gray-100">Axios</span>
                   <span className="technical-label rounded bg-white px-2.5 py-1 text-[10px] font-bold text-main-text shadow-sm border border-gray-100">Recharts</span>
                 </div>
-                <Link to="/mytamildate" className="mt-auto flex items-center justify-center gap-2 rounded-lg bg-primary py-3 text-sm font-bold text-white">View Full Technical Report</Link>
+                <div className="mt-auto flex items-center justify-center gap-2 rounded-lg bg-primary py-3 text-sm font-bold text-white transition-colors group-hover:bg-primary/90">View Full Technical Report</div>
               </div>
-            </div>
+            </Link>
             {/* Project 2 */}
-            <div className="group flex flex-col overflow-hidden rounded-xl bg-background-light shadow-sm transition-all hover:shadow-md">
+            <Link to="/kanhalo" className="block outline-none group flex flex-col overflow-hidden rounded-xl bg-background-light shadow-sm transition-all hover:shadow-xl hover:-translate-y-1">
               <div className="aspect-video w-full overflow-hidden">
                 <img className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Sophisticated data visualization and analytics dashboard" src={imgKanhalo} />
               </div>
@@ -107,11 +107,11 @@ const Home = () => {
                   <span className="technical-label rounded bg-white px-2.5 py-1 text-[10px] font-bold text-main-text shadow-sm border border-gray-100">WOOCOMMERCE</span>
                   <span className="technical-label rounded bg-white px-2.5 py-1 text-[10px] font-bold text-main-text shadow-sm border border-gray-100">MYSQL</span>
                 </div>
-                <Link to="/kanhalo" className="mt-auto flex items-center justify-center gap-2 rounded-lg bg-primary py-3 text-sm font-bold text-white">View Full Technical Report</Link>
+                <div className="mt-auto flex items-center justify-center gap-2 rounded-lg bg-primary py-3 text-sm font-bold text-white transition-colors group-hover:bg-primary/90">View Full Technical Report</div>
               </div>
-            </div>
+            </Link>
             {/* Project 3 */}
-            <div className="group flex flex-col overflow-hidden rounded-xl bg-background-light shadow-sm transition-all hover:shadow-md">
+            <Link to="/vision" className="block outline-none group flex flex-col overflow-hidden rounded-xl bg-background-light shadow-sm transition-all hover:shadow-xl hover:-translate-y-1">
               <div className="aspect-video w-full overflow-hidden bg-gray-100">
                 <img className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Screenshot of an AI vision reading assistive application" src={imgVision} />
               </div>
@@ -130,11 +130,11 @@ const Home = () => {
                   <span className="technical-label rounded bg-white px-2.5 py-1 text-[10px] font-bold text-main-text shadow-sm border border-gray-100">YOLO V3</span>
                   <span className="technical-label rounded bg-white px-2.5 py-1 text-[10px] font-bold text-main-text shadow-sm border border-gray-100">OPENCV</span>
                 </div>
-                <Link to="/vision" className="mt-auto flex items-center justify-center gap-2 rounded-lg bg-primary py-3 text-sm font-bold text-white">View Full Technical Report</Link>
+                <div className="mt-auto flex items-center justify-center gap-2 rounded-lg bg-primary py-3 text-sm font-bold text-white transition-colors group-hover:bg-primary/90">View Full Technical Report</div>
               </div>
-            </div>
+            </Link>
             {/* Project 4 */}
-            <div className="group flex flex-col overflow-hidden rounded-xl bg-background-light shadow-sm transition-all hover:shadow-md">
+            <Link to="/growmore" className="block outline-none group flex flex-col overflow-hidden rounded-xl bg-background-light shadow-sm transition-all hover:shadow-xl hover:-translate-y-1">
               <div className="aspect-video w-full overflow-hidden bg-gray-100">
                 <img className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Screenshot of a startup and investor mobile dashboard" src={imgGrowmore} />
               </div>
@@ -153,11 +153,11 @@ const Home = () => {
                   <span className="technical-label rounded bg-white px-2.5 py-1 text-[10px] font-bold text-main-text shadow-sm border border-gray-100">MONGODB</span>
                   <span className="technical-label rounded bg-white px-2.5 py-1 text-[10px] font-bold text-main-text shadow-sm border border-gray-100">FIGMA</span>
                 </div>
-                <Link to="/growmore" className="mt-auto flex items-center justify-center gap-2 rounded-lg bg-primary py-3 text-sm font-bold text-white">View Full Technical Report</Link>
+                <div className="mt-auto flex items-center justify-center gap-2 rounded-lg bg-primary py-3 text-sm font-bold text-white transition-colors group-hover:bg-primary/90">View Full Technical Report</div>
               </div>
-            </div>
+            </Link>
             {/* Project 5 */}
-            <div className="group flex flex-col overflow-hidden rounded-xl bg-background-light shadow-sm transition-all hover:shadow-md">
+            <Link to="/transact" className="block outline-none group flex flex-col overflow-hidden rounded-xl bg-background-light shadow-sm transition-all hover:shadow-xl hover:-translate-y-1">
               <div className="aspect-video w-full overflow-hidden bg-gray-100">
                 <img className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Screenshot of Transact mobile banking application" src= {imgTransact} />
               </div>
@@ -175,9 +175,9 @@ const Home = () => {
                   <span className="technical-label rounded bg-white px-2.5 py-1 text-[10px] font-bold text-main-text shadow-sm border border-gray-100">UI/UX</span>
                   <span className="technical-label rounded bg-white px-2.5 py-1 text-[10px] font-bold text-main-text shadow-sm border border-gray-100">MVVM</span>
                 </div>
-                <Link to="/transact" className="mt-auto flex items-center justify-center gap-2 rounded-lg bg-primary py-3 text-sm font-bold text-white">View Full Technical Report</Link>
+                <div className="mt-auto flex items-center justify-center gap-2 rounded-lg bg-primary py-3 text-sm font-bold text-white transition-colors group-hover:bg-primary/90">View Full Technical Report</div>
               </div>
-            </div>
+            </Link>
           </div>
         </div>
       </section>
