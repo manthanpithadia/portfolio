@@ -1,405 +1,553 @@
 <!DOCTYPE html>
 
-<html class="light" lang="en"><head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Manthan Pithadia | Senior Product Developer &amp; MVP Architect</title>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;family=JetBrains+Mono:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<script id="tailwind-config">
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>mytamildate UX Case Study | Senior Product Developer</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script id="tailwind-config">
         tailwind.config = {
             darkMode: "class",
             theme: {
                 extend: {
                     colors: {
                         "primary": "#1982cc",
-                        "background-light": "#F9FAFB",
+                        "background-light": "#f6f7f8",
                         "background-dark": "#111a21",
-                        "card-bg": "#FFFFFF",
-                        "heading-text": "#1E293B",
-                        "main-text": "#1A3A57",
-                        "sub-text": "#62738A",
-                        "icon-gray": "#4B5563",
-                        "success-green": "#27A551",
                     },
                     fontFamily: {
-                        "display": ["Inter", "sans-serif"],
-                        "mono": ["JetBrains Mono", "monospace"]
+                        "display": ["Inter", "sans-serif"]
                     },
-                    borderRadius: {
-                        "DEFAULT": "0.25rem",
-                        "lg": "0.5rem",
-                        "xl": "0.75rem",
-                        "full": "9999px"
-                    },
+                    borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" },
                 },
             },
         }
     </script>
-<style>
+    <style>
         body {
             font-family: 'Inter', sans-serif;
-            background-color: #F9FAFB;
-            color: #1A3A57;
         }
-        .technical-label {
-            font-family: 'JetBrains Mono', monospace;
-        }
-        .grid-pattern {
-            background-image: radial-gradient(#1982cc 0.5px, transparent 0.5px);
-            background-size: 24px 24px;
-            opacity: 0.1;
+
+        .glass-card {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(8px);
         }
     </style>
 </head>
-<body class="bg-background-light text-main-text font-display">
-<!-- Top Navigation -->
-<header class="sticky top-0 z-50 w-full border-b border-gray-200 bg-white/80 backdrop-blur-md">
-<div class="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
-<div class="flex items-center gap-3">
-<div class="flex h-10 w-10 items-center justify-center rounded bg-primary text-white">
-<span class="material-symbols-outlined">architecture</span>
-</div>
-<div>
-<h2 class="text-heading-text text-lg font-bold leading-none tracking-tight">Manthan Pithadia</h2>
-<p class="technical-label text-[10px] font-medium uppercase tracking-widest text-primary">MVP Architect</p>
-</div>
-</div>
-<nav class="hidden items-center gap-8 md:flex">
-<a class="text-sm font-semibold text-sub-text hover:text-primary transition-colors" href="#reports">Mission Reports</a>
-<a class="text-sm font-semibold text-sub-text hover:text-primary transition-colors" href="#framework">The Framework</a>
-<a class="text-sm font-semibold text-sub-text hover:text-primary transition-colors" href="#protocol">The Protocol</a>
-<a class="text-sm font-semibold text-sub-text hover:text-primary transition-colors" href="#filter">The Filter</a>
-</nav>
-<div class="flex items-center gap-4">
-<button class="hidden rounded-lg bg-primary px-5 py-2.5 text-sm font-bold text-white shadow-sm transition-all hover:bg-primary/90 md:block">
-                    Apply for Strategy Call
-                </button>
-<div class="h-10 w-10 overflow-hidden rounded-full border-2 border-primary/20 bg-gray-100">
-<img class="h-full w-full object-cover" data-alt="Professional headshot of Manthan Pithadia" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAdUW63kDA56Ymcfvx2UM2NlACg4Kny6VKfhhgjMZe2iqbMUxS_mhOYN4ZPCbtvqJAUSrADh3VMleV9InEqk8k4qKNxjXL7YXNtMcE5e123yVWtIgGH3P2m7v3h1CcJjgQWS6X4XNyrmKvDaSM3dJVx6ZEcDalb4khDg5ZTusvDtPz46v4lAIq2-wCg8Us_u83WjyGQjRMr6ATOIS_-l9L-PrCXiahqJyqPD9H2VHqvyVc0vgXL39QfYJIgoMfPOOJS8jtntzyBDCha"/>
-</div>
-</div>
-</div>
-</header>
-<!-- Hero Section -->
-<section class="relative overflow-hidden pt-20 pb-24 md:pt-32 md:pb-40">
-<div class="grid-pattern absolute inset-0 -z-10"></div>
-<div class="mx-auto max-w-5xl px-6 text-center">
-<div class="mb-6 inline-flex items-center gap-2 rounded-full border border-primary/20 bg-primary/5 px-4 py-1">
-<span class="relative flex h-2 w-2">
-<span class="absolute inline-flex h-full w-full animate-ping rounded-full bg-primary opacity-75"></span>
-<span class="relative inline-flex h-2 w-2 rounded-full bg-primary"></span>
-</span>
-<span class="technical-label text-[11px] font-bold uppercase tracking-[0.2em] text-primary">System Architecture Active</span>
-</div>
-<h1 class="text-heading-text mb-8 text-4xl font-black leading-[1.1] tracking-tight md:text-6xl lg:text-7xl">
-                I build scalable MVPs that <br class="hidden md:block"/> <span class="text-primary">don’t bleed your runway.</span>
-</h1>
-<p class="mx-auto mb-10 max-w-2xl text-lg leading-relaxed text-sub-text md:text-xl">
-                Senior Product Developer &amp; MVP Architect with 9+ years of experience. Applying a <span class="font-bold text-heading-text">fiduciary mindset</span> to your technical architecture.
-            </p>
-<div class="flex flex-col items-center justify-center gap-4 sm:flex-row">
-<button class="flex min-w-[200px] items-center justify-center gap-2 rounded-lg bg-primary px-8 py-4 text-base font-bold text-white shadow-lg transition-all hover:translate-y-[-2px] hover:shadow-xl">
-                    Apply for Strategy Call
-                    <span class="material-symbols-outlined text-xl">arrow_forward</span>
-</button>
-<button class="flex min-w-[200px] items-center justify-center gap-2 rounded-lg border-2 border-gray-200 bg-white px-8 py-4 text-base font-bold text-heading-text transition-all hover:bg-gray-50">
-                    View Methodology
-                </button>
-</div>
-<div class="mt-16 flex items-center justify-center gap-12 opacity-50 grayscale transition-all hover:grayscale-0">
-<div class="technical-label flex flex-col items-center text-xs font-bold uppercase tracking-widest">
-<span>9+ Years Build Time</span>
-</div>
-<div class="technical-label flex flex-col items-center text-xs font-bold uppercase tracking-widest">
-<span>40+ MVPs Shipped</span>
-</div>
-<div class="technical-label flex flex-col items-center text-xs font-bold uppercase tracking-widest">
-<span>$50M+ Raised by Clients</span>
-</div>
-</div>
-</div>
-</section>
-<!-- Mission Reports -->
-<section class="py-24 bg-white" id="reports">
-<div class="mx-auto max-w-7xl px-6">
-<div class="mb-16 flex items-end justify-between">
-<div>
-<span class="technical-label text-xs font-bold uppercase tracking-widest text-primary">Case Studies</span>
-<h2 class="text-heading-text mt-2 text-3xl font-black tracking-tight md:text-4xl">Mission Reports</h2>
-</div>
-<div class="hidden text-right md:block">
-<p class="text-sm text-sub-text">Technical documentation of</p>
-<p class="technical-label text-sm font-bold text-heading-text">HIGH-VELOCITY SHIPMENTS</p>
-</div>
-</div>
-<div class="grid gap-8 lg:grid-cols-2">
-<!-- Project 1 -->
-<div class="group flex flex-col overflow-hidden rounded-xl bg-background-light shadow-sm transition-all hover:shadow-md">
-<div class="aspect-video w-full overflow-hidden">
-<img class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Web application interface showing a social community platform dashboard" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDBy0sv1HZlkWpeYSMHSttGF8hskuUf6duNy5FPYm8xZsdqHDdjYRLC6qqf1pqm8DwYgek4y_DxzLXF6lOqwYGyL6x0jQNEhD-2gvlI-V3c7h5qA4yV_0zMrASs6v00W59YOwKwVikksV9zZyQi7LBjA33dQpOeIjNHqHJzCofWs0tNCD1YUwYVMQQWN7cxmJy8KplJgjp1-t6i0SpYxnWwvVl0wPYBMb1gtMdiDzcv2pA3EEWsUVDN0kJKpkfZrL2paySPnj_jSNOi"/>
-</div>
-<div class="flex flex-1 flex-col p-8">
-<div class="mb-4 flex items-center justify-between">
-<p class="technical-label text-[11px] font-bold uppercase tracking-widest text-sub-text">Report 01: Community Platform</p>
-<span class="material-symbols-outlined text-primary">terminal</span>
-</div>
-<h3 class="text-heading-text mb-3 text-2xl font-bold">mytamildate</h3>
-<p class="mb-6 leading-relaxed text-sub-text">
-                            Scaling community-driven platforms with robust architecture. Focused on high-availability and seamless user growth through a cloud-native infrastructure.
-                        </p>
-<div class="mb-8 flex flex-wrap gap-2">
-<span class="technical-label rounded bg-white px-2.5 py-1 text-[10px] font-bold text-main-text shadow-sm border border-gray-100">NEXT.JS</span>
-<span class="technical-label rounded bg-white px-2.5 py-1 text-[10px] font-bold text-main-text shadow-sm border border-gray-100">SUPABASE</span>
-<span class="technical-label rounded bg-white px-2.5 py-1 text-[10px] font-bold text-main-text shadow-sm border border-gray-100">POSTGRES</span>
-<span class="technical-label rounded bg-white px-2.5 py-1 text-[10px] font-bold text-main-text shadow-sm border border-gray-100">REDIS</span>
-</div>
-<button class="mt-auto flex items-center justify-center gap-2 rounded-lg bg-primary py-3 text-sm font-bold text-white">
-                            View Full Technical Report
-                        </button>
-</div>
-</div>
-<!-- Project 2 -->
-<div class="group flex flex-col overflow-hidden rounded-xl bg-background-light shadow-sm transition-all hover:shadow-md">
-<div class="aspect-video w-full overflow-hidden">
-<img class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Sophisticated data visualization and analytics dashboard" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCZf-qvxk53UPUZzlk3tK0lpnCSrePMKrKajtYnXDEquJ8AViuxH_HHZmVD_prphEw5VAkPNebPbtKpF3yNjs7UmW2Y2De-01Jn3qcVvLeMbqDFdXnMXV80jWkjEwJpSv06SPFNd734HhgcjijI0z3dDXEPKXrdNGhOTQEt2LO8zVjszV2QXZh-6C2IkpbDOy7DuSt-90mUo9pVvvdG83nix7diBQXPWQef_AAUuiv2X8QHLJAfQ5XcR_QKl32DWeZBBk10l5lAKe_N"/>
-</div>
-<div class="flex flex-1 flex-col p-8">
-<div class="mb-4 flex items-center justify-between">
-<p class="technical-label text-[11px] font-bold uppercase tracking-widest text-sub-text">Report 02: Fintech MVP</p>
-<span class="material-symbols-outlined text-primary">data_thresholding</span>
-</div>
-<h3 class="text-heading-text mb-3 text-2xl font-bold">Kanhala</h3>
-<p class="mb-6 leading-relaxed text-sub-text">
-                            Architecting a high-performance financial data engine. Engineered for low-latency processing and secure transactional integrity across distributed nodes.
-                        </p>
-<div class="mb-8 flex flex-wrap gap-2">
-<span class="technical-label rounded bg-white px-2.5 py-1 text-[10px] font-bold text-main-text shadow-sm border border-gray-100">REACT</span>
-<span class="technical-label rounded bg-white px-2.5 py-1 text-[10px] font-bold text-main-text shadow-sm border border-gray-100">NODE.JS</span>
-<span class="technical-label rounded bg-white px-2.5 py-1 text-[10px] font-bold text-main-text shadow-sm border border-gray-100">AWS LAMBDA</span>
-<span class="technical-label rounded bg-white px-2.5 py-1 text-[10px] font-bold text-main-text shadow-sm border border-gray-100">DYNAMODB</span>
-</div>
-<button class="mt-auto flex items-center justify-center gap-2 rounded-lg bg-primary py-3 text-sm font-bold text-white">
-                            View Full Technical Report
-                        </button>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- The Fiduciary Framework -->
-<section class="py-24 bg-background-light" id="framework">
-<div class="mx-auto max-w-7xl px-6 text-center">
-<span class="technical-label text-xs font-bold uppercase tracking-widest text-primary">Operational Ethos</span>
-<h2 class="text-heading-text mt-4 mb-16 text-3xl font-black tracking-tight md:text-5xl">The Fiduciary Framework</h2>
-<div class="grid gap-8 md:grid-cols-3">
-<div class="rounded-xl border border-gray-200 bg-white p-8 text-left transition-all hover:shadow-lg">
-<div class="mb-6 flex h-14 w-14 items-center justify-center rounded-lg bg-primary/10 text-primary">
-<span class="material-symbols-outlined text-3xl">key</span>
-</div>
-<h3 class="text-heading-text mb-4 text-xl font-bold">Absolute Ownership</h3>
-<p class="leading-relaxed text-sub-text">
-                        You own 100% of the code, the accounts, and the data. No proprietary "black box" dependencies or developer-lock-ins.
-                    </p>
-</div>
-<div class="rounded-xl border border-gray-200 bg-white p-8 text-left transition-all hover:shadow-lg">
-<div class="mb-6 flex h-14 w-14 items-center justify-center rounded-lg bg-primary/10 text-primary">
-<span class="material-symbols-outlined text-3xl">verified_user</span>
-</div>
-<h3 class="text-heading-text mb-4 text-xl font-bold">Hardened Security</h3>
-<p class="leading-relaxed text-sub-text">
-                        Enterprise-grade protocols from Day 1. Every MVP is architected with a security-first posture to protect your intellectual property and user data.
-                    </p>
-</div>
-<div class="rounded-xl border border-gray-200 bg-white p-8 text-left transition-all hover:shadow-lg">
-<div class="mb-6 flex h-14 w-14 items-center justify-center rounded-lg bg-primary/10 text-primary">
-<span class="material-symbols-outlined text-3xl">query_stats</span>
-</div>
-<h3 class="text-heading-text mb-4 text-xl font-bold">Radical Transparency</h3>
-<p class="leading-relaxed text-sub-text">
-                        Real-time velocity tracking and clear spend reports. You see exactly where every hour and every dollar of your runway is being invested.
-                    </p>
-</div>
-</div>
-</div>
-</section>
-<!-- The Protocol -->
-<section class="py-24 bg-white" id="protocol">
-<div class="mx-auto max-w-5xl px-6">
-<div class="mb-20 text-center">
-<span class="technical-label text-xs font-bold uppercase tracking-widest text-primary">Ship Fast. Ship Right.</span>
-<h2 class="text-heading-text mt-4 text-3xl font-black tracking-tight md:text-5xl">The Protocol</h2>
-<p class="mt-4 text-sub-text">A 6-week velocity process to move from concept to deployment.</p>
-</div>
-<div class="relative space-y-12 before:absolute before:left-6 before:top-2 before:h-full before:w-0.5 before:bg-gray-100 md:before:left-1/2">
-<!-- Step 1 -->
-<div class="relative flex flex-col md:flex-row md:items-center">
-<div class="z-10 flex h-12 w-12 items-center justify-center rounded-full bg-primary text-white shadow-md md:absolute md:left-1/2 md:-translate-x-1/2">
-<span class="technical-label text-sm font-bold">01</span>
-</div>
-<div class="mt-4 rounded-xl border border-gray-100 bg-background-light p-6 shadow-sm md:mt-0 md:w-[45%]">
-<h4 class="text-heading-text mb-2 font-bold">Discovery &amp; Audit</h4>
-<p class="text-sm leading-relaxed text-sub-text">Deep dive into your business logic, user personas, and core technical requirements to define the MVP scope.</p>
-</div>
-</div>
-<!-- Step 2 -->
-<div class="relative flex flex-col md:flex-row-reverse md:items-center">
-<div class="z-10 flex h-12 w-12 items-center justify-center rounded-full bg-primary text-white shadow-md md:absolute md:left-1/2 md:-translate-x-1/2">
-<span class="technical-label text-sm font-bold">02</span>
-</div>
-<div class="mt-4 rounded-xl border border-gray-100 bg-background-light p-6 shadow-sm md:mt-0 md:w-[45%]">
-<h4 class="text-heading-text mb-2 font-bold">Architectural Blueprint</h4>
-<p class="text-sm leading-relaxed text-sub-text">Defining the stack, database schema, and infrastructure setup to ensure scalability from the first line of code.</p>
-</div>
-</div>
-<!-- Step 3 -->
-<div class="relative flex flex-col md:flex-row md:items-center">
-<div class="z-10 flex h-12 w-12 items-center justify-center rounded-full bg-primary text-white shadow-md md:absolute md:left-1/2 md:-translate-x-1/2">
-<span class="technical-label text-sm font-bold">03</span>
-</div>
-<div class="mt-4 rounded-xl border border-gray-100 bg-background-light p-6 shadow-sm md:mt-0 md:w-[45%]">
-<h4 class="text-heading-text mb-2 font-bold">Sprint 0: Infrastructure</h4>
-<p class="text-sm leading-relaxed text-sub-text">Setting up CI/CD, staging environments, and boilerplate foundation for rapid feature iteration.</p>
-</div>
-</div>
-<!-- Step 4 -->
-<div class="relative flex flex-col md:flex-row-reverse md:items-center">
-<div class="z-10 flex h-12 w-12 items-center justify-center rounded-full bg-primary text-white shadow-md md:absolute md:left-1/2 md:-translate-x-1/2">
-<span class="technical-label text-sm font-bold">04</span>
-</div>
-<div class="mt-4 rounded-xl border border-gray-100 bg-background-light p-6 shadow-sm md:mt-0 md:w-[45%]">
-<h4 class="text-heading-text mb-2 font-bold">Velocity Build</h4>
-<p class="text-sm leading-relaxed text-sub-text">The meat of the project. Shipping core features in 1-week cycles with frequent stakeholder updates.</p>
-</div>
-</div>
-<!-- Step 5 -->
-<div class="relative flex flex-col md:flex-row md:items-center">
-<div class="z-10 flex h-12 w-12 items-center justify-center rounded-full bg-primary text-white shadow-md md:absolute md:left-1/2 md:-translate-x-1/2">
-<span class="technical-label text-sm font-bold">05</span>
-</div>
-<div class="mt-4 rounded-xl border border-gray-100 bg-background-light p-6 shadow-sm md:mt-0 md:w-[45%]">
-<h4 class="text-heading-text mb-2 font-bold">Security Hardening</h4>
-<p class="text-sm leading-relaxed text-sub-text">Penetration testing, optimization, and refining the user experience for production-ready polish.</p>
-</div>
-</div>
-<!-- Step 6 -->
-<div class="relative flex flex-col md:flex-row-reverse md:items-center">
-<div class="z-10 flex h-12 w-12 items-center justify-center rounded-full bg-success-green text-white shadow-md md:absolute md:left-1/2 md:-translate-x-1/2">
-<span class="material-symbols-outlined text-lg">rocket_launch</span>
-</div>
-<div class="mt-4 rounded-xl border-2 border-success-green/20 bg-success-green/5 p-6 shadow-sm md:mt-0 md:w-[45%]">
-<h4 class="text-heading-text mb-2 font-bold text-success-green">Mission Deployment</h4>
-<p class="text-sm leading-relaxed text-sub-text">Final handoff, training, and production launch. Your MVP is live and ready for real users.</p>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- The Filter -->
-<section class="py-24 bg-background-light" id="filter">
-<div class="mx-auto max-w-7xl px-6">
-<div class="mb-16 text-center">
-<span class="technical-label text-xs font-bold uppercase tracking-widest text-primary">Pre-Qualification Matrix</span>
-<h2 class="text-heading-text mt-4 text-3xl font-black tracking-tight md:text-5xl">The Filter</h2>
-<p class="mt-4 text-sub-text">I only partner with founders where I can provide a 10x ROI on architecture.</p>
-</div>
-<div class="grid gap-8 lg:grid-cols-2">
-<!-- Ideal Match -->
-<div class="rounded-xl border-2 border-success-green/30 bg-white p-10 shadow-lg">
-<div class="mb-8 flex items-center gap-4">
-<div class="flex h-12 w-12 items-center justify-center rounded-full bg-success-green text-white">
-<span class="material-symbols-outlined">check_circle</span>
-</div>
-<h3 class="text-2xl font-bold text-heading-text">Ideal Partnership</h3>
-</div>
-<ul class="space-y-6">
-<li class="flex items-start gap-3">
-<span class="material-symbols-outlined mt-1 text-success-green">add</span>
-<span class="text-main-text font-medium">Founders with a validated market and a clear roadmap for the next 12 months.</span>
-</li>
-<li class="flex items-start gap-3">
-<span class="material-symbols-outlined mt-1 text-success-green">add</span>
-<span class="text-main-text font-medium">Startups looking for a long-term technical partner, not just a "feature factory."</span>
-</li>
-<li class="flex items-start gap-3">
-<span class="material-symbols-outlined mt-1 text-success-green">add</span>
-<span class="text-main-text font-medium">Ventures that value scalability, security, and technical excellence from Day 1.</span>
-</li>
-<li class="flex items-start gap-3">
-<span class="material-symbols-outlined mt-1 text-success-green">add</span>
-<span class="text-main-text font-medium">Teams with seed funding or a self-sustaining revenue model.</span>
-</li>
-</ul>
-</div>
-<!-- Non-Match -->
-<div class="rounded-xl border border-gray-200 bg-gray-50 p-10 grayscale opacity-80">
-<div class="mb-8 flex items-center gap-4">
-<div class="flex h-12 w-12 items-center justify-center rounded-full bg-gray-200 text-icon-gray">
-<span class="material-symbols-outlined">cancel</span>
-</div>
-<h3 class="text-2xl font-bold text-heading-text">Non-Match</h3>
-</div>
-<ul class="space-y-6">
-<li class="flex items-start gap-3">
-<span class="material-symbols-outlined mt-1 text-icon-gray">remove</span>
-<span class="text-sub-text font-medium">Pre-validation "ideas" that haven't talked to a single potential customer yet.</span>
-</li>
-<li class="flex items-start gap-3">
-<span class="material-symbols-outlined mt-1 text-icon-gray">remove</span>
-<span class="text-sub-text font-medium">Founders looking for the "cheapest possible" offshore dev shop build.</span>
-</li>
-<li class="flex items-start gap-3">
-<span class="material-symbols-outlined mt-1 text-icon-gray">remove</span>
-<span class="text-sub-text font-medium">Projects where technical debt is viewed as a "future problem" rather than a cost.</span>
-</li>
-<li class="flex items-start gap-3">
-<span class="material-symbols-outlined mt-1 text-icon-gray">remove</span>
-<span class="text-sub-text font-medium">Short-term mercenary work without a vision for a scalable product.</span>
-</li>
-</ul>
-</div>
-</div>
-<div class="mt-16 text-center">
-<button class="rounded-lg bg-primary px-12 py-5 text-lg font-black text-white shadow-xl transition-all hover:scale-105 active:scale-95">
-                    Ready to Build? Apply for Strategy Call
-                </button>
-</div>
-</div>
-</section>
-<!-- Footer -->
-<footer class="border-t border-gray-200 bg-white py-12">
-<div class="mx-auto max-w-7xl px-6">
-<div class="mb-12 flex flex-col items-center justify-between gap-8 md:flex-row">
-<div class="flex items-center gap-3">
-<div class="flex h-10 w-10 items-center justify-center rounded bg-heading-text text-white">
-<span class="material-symbols-outlined">architecture</span>
-</div>
-<div>
-<h2 class="text-heading-text text-lg font-bold leading-none tracking-tight">Manthan Pithadia</h2>
-<p class="technical-label text-[10px] font-medium uppercase tracking-widest text-primary">Senior MVP Architect</p>
-</div>
-</div>
-<div class="flex flex-col items-center gap-2 md:items-end">
-<div class="flex items-center gap-2 rounded-full border border-success-green/20 bg-success-green/5 px-4 py-1.5">
-<span class="relative flex h-2 w-2">
-<span class="absolute inline-flex h-full w-full animate-ping rounded-full bg-success-green opacity-75"></span>
-<span class="relative inline-flex h-2 w-2 rounded-full bg-success-green"></span>
-</span>
-<span class="technical-label text-[11px] font-bold uppercase tracking-widest text-success-green">System Status: Accepting Q3 Founders</span>
-</div>
-<p class="text-xs text-sub-text">Estimated project slot availability: Sept 2024</p>
-</div>
-</div>
-<div class="flex flex-col items-center justify-between border-t border-gray-100 pt-8 text-sm text-sub-text md:flex-row">
-<div class="flex gap-8">
-<a class="hover:text-primary" href="#">LinkedIn</a>
-<a class="hover:text-primary" href="#">Twitter / X</a>
-<a class="hover:text-primary" href="#">Github</a>
-</div>
-<p class="mt-4 md:mt-0">© 2024 Manthan Pithadia. All rights reserved. Built with precision.</p>
-</div>
-</div>
-</footer>
-</body></html>
+
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100">
+    <div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+        <div class="layout-container flex h-full grow flex-col">
+            <!-- Navigation -->
+            <header
+                class="flex items-center justify-between whitespace-nowrap border-b border-solid border-slate-200 dark:border-slate-800 px-6 lg:px-40 py-3 bg-white dark:bg-background-dark sticky top-0 z-50">
+                <div class="flex items-center gap-4 text-primary">
+                    <div class="size-6">
+                        <svg fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M24 4C25.7818 14.2173 33.7827 22.2182 44 24C33.7827 25.7818 25.7818 33.7827 24 44C22.2182 33.7827 14.2173 25.7818 4 24C14.2173 22.2182 22.2182 14.2173 24 4Z"
+                                fill="currentColor"></path>
+                        </svg>
+                    </div>
+                    <h2 class="text-slate-900 dark:text-slate-100 text-lg font-bold leading-tight tracking-[-0.015em]">
+                        mytamildate</h2>
+                </div>
+                <div class="flex flex-1 justify-end gap-8 items-center">
+                    <nav class="hidden md:flex items-center gap-9">
+                        <a class="text-slate-600 dark:text-slate-400 text-sm font-medium hover:text-primary transition-colors"
+                            href="#overview">Overview</a>
+                        <a class="text-slate-600 dark:text-slate-400 text-sm font-medium hover:text-primary transition-colors"
+                            href="#research">Research</a>
+                        <a class="text-slate-600 dark:text-slate-400 text-sm font-medium hover:text-primary transition-colors"
+                            href="#design">Design</a>
+                        <a class="text-slate-600 dark:text-slate-400 text-sm font-medium hover:text-primary transition-colors"
+                            href="#results">Results</a>
+                    </nav>
+                    <button
+                        class="flex min-w-[84px] cursor-pointer items-center justify-center rounded-lg h-10 px-4 bg-primary text-white text-sm font-bold hover:bg-primary/90 transition-all">
+                        <span>Contact Me</span>
+                    </button>
+                </div>
+            </header>
+            <main class="flex flex-1 justify-center py-10 px-6 lg:px-40">
+                <div class="layout-content-container flex flex-col max-w-[1024px] flex-1">
+                    <!-- Hero Section -->
+                    <section class="mb-16" id="overview">
+                        <div class="relative overflow-hidden rounded-xl min-h-[400px] flex flex-col justify-end p-8 md:p-12 mb-10 bg-slate-900"
+                            data-alt="Modern couple interacting on digital devices in a vibrant urban setting"
+                            style='background-image: linear-gradient(0deg, rgba(17, 26, 33, 0.9) 0%, rgba(17, 26, 33, 0.2) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuAD-oncglrJmHbo0mgBQhYSKgGkdop1U-j5AyAnEcxWdgE68g7yg-mKNaa5idZzcSWQ4gcnKxyPHuect2_Nv8U7EmFtTtC0pYb0lELB4UPMpUDAPQ871ElVh-83Zg-gyqFiJvmo5zy2u_XGrwSyJKgG7aWtI55P62qscscV4ZqmdYomtH1aoH5Pf4WJXd_J5pXD4bwyO_ugMkY6sbIr8DiPIeC7Y_ilBHu9Q-uw_LH3ct-GpHFoJL2K4ypH64VEQpk6swh3_4lLrqCF"); background-size: cover; background-position: center;'>
+                            <div class="max-w-2xl">
+                                <span
+                                    class="bg-primary px-3 py-1 rounded-full text-xs font-bold text-white uppercase tracking-wider">UX
+                                    Case Study</span>
+                                <h1 class="text-white text-4xl md:text-5xl font-black leading-tight mt-4 mb-6">Scaling
+                                    Global Connection: The mytamildate Ecosystem</h1>
+                                <p class="text-slate-200 text-lg md:text-xl font-medium">Architecting a high-concurrency
+                                    dating platform for the global Tamil diaspora.</p>
+                            </div>
+                        </div>
+                        <!-- Project Metadata -->
+                        <div
+                            class="grid grid-cols-1 md:grid-cols-4 gap-6 p-6 bg-white dark:bg-background-dark border border-slate-200 dark:border-slate-800 rounded-xl">
+                            <div class="flex flex-col gap-1">
+                                <span class="text-slate-500 text-xs font-bold uppercase tracking-widest">Type</span>
+                                <span class="text-slate-900 dark:text-slate-100 font-semibold">Web App
+                                    (Mobile-First)</span>
+                            </div>
+                            <div class="flex flex-col gap-1">
+                                <span class="text-slate-500 text-xs font-bold uppercase tracking-widest">Role</span>
+                                <span class="text-slate-900 dark:text-slate-100 font-semibold">Senior Product Developer
+                                    &amp; MVP Architect</span>
+                            </div>
+                            <div class="flex flex-col gap-1">
+                                <span class="text-slate-500 text-xs font-bold uppercase tracking-widest">Timeline</span>
+                                <span class="text-slate-900 dark:text-slate-100 font-semibold">8 Weeks (MVP
+                                    Phase)</span>
+                            </div>
+                            <div class="flex flex-col gap-1">
+                                <span class="text-slate-500 text-xs font-bold uppercase tracking-widest">Tech
+                                    Stack</span>
+                                <span class="text-slate-900 dark:text-slate-100 font-semibold">Next.js, Node,
+                                    Redis</span>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- Problem Statement -->
+                    <section class="mb-20">
+                        <div class="flex flex-col md:flex-row gap-12 items-center">
+                            <div class="flex-1">
+                                <h2 class="text-3xl font-black mb-6 flex items-center gap-2">
+                                    <span class="material-symbols-outlined text-primary">report_problem</span>
+                                    Problem Statement
+                                </h2>
+                                <p class="text-slate-600 dark:text-slate-400 text-lg leading-relaxed mb-6">
+                                    The legacy platform hit a critical ceiling. With 20k+ concurrent users, the
+                                    monolithic architecture suffered from frequent database locks, resulting in slow
+                                    matching and poor user retention.
+                                </p>
+                                <div class="bg-primary/5 dark:bg-primary/10 border-l-4 border-primary p-6 rounded-r-lg">
+                                    <p class="font-medium text-slate-800 dark:text-slate-200 italic">
+                                        "Matches took over 5 seconds to load, and the profile verification was manual,
+                                        creating a 48-hour onboarding bottleneck."
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="w-full md:w-1/3 flex justify-center">
+                                <div
+                                    class="relative w-full aspect-square bg-slate-100 dark:bg-slate-800 rounded-2xl flex items-center justify-center p-8 text-center overflow-hidden">
+                                    <div class="flex flex-col items-center gap-4">
+                                        <span
+                                            class="material-symbols-outlined text-6xl text-primary/40">lock_reset</span>
+                                        <p class="text-sm font-bold text-slate-500">Database Locks at 20k+ Users</p>
+                                    </div>
+                                    <div class="absolute inset-0 bg-primary/5 opacity-50"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- Research & User Persona -->
+                    <section class="mb-20 space-y-12" id="research">
+                        <div>
+                            <h2 class="text-3xl font-black mb-6">Research &amp; Insights</h2>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                                <div
+                                    class="p-8 bg-white dark:bg-background-dark border border-slate-200 dark:border-slate-800 rounded-xl shadow-sm">
+                                    <h3 class="font-bold text-lg mb-4 flex items-center gap-2">
+                                        <span class="material-symbols-outlined text-primary">analytics</span>
+                                        Competitor Analysis
+                                    </h3>
+                                    <p class="text-slate-600 dark:text-slate-400">Niche dating apps often suffer from
+                                        "feature bloat" but lack technical performance. Users in the Tamil diaspora felt
+                                        that global apps lacked cultural nuance, while local apps were technically
+                                        unstable.</p>
+                                </div>
+                                <div
+                                    class="p-8 bg-white dark:bg-background-dark border border-slate-200 dark:border-slate-800 rounded-xl shadow-sm">
+                                    <h3 class="font-bold text-lg mb-4 flex items-center gap-2">
+                                        <span class="material-symbols-outlined text-primary">search_check</span>
+                                        Usability Analysis
+                                    </h3>
+                                    <p class="text-slate-600 dark:text-slate-400">Identified that the profile
+                                        verification flow had a 65% drop-off rate due to friction. Users wanted a
+                                        high-trust environment without the friction of a 15-field form.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- User Persona -->
+                        <div
+                            class="bg-white dark:bg-background-dark border border-slate-200 dark:border-slate-800 rounded-2xl overflow-hidden shadow-xl">
+                            <div class="md:flex">
+                                <div class="md:w-1/3 bg-primary/10 p-8 flex flex-col items-center text-center">
+                                    <div
+                                        class="w-32 h-32 rounded-full overflow-hidden border-4 border-white dark:border-slate-700 mb-4">
+                                        <img alt="User Persona Portrait" class="w-full h-full object-cover"
+                                            data-alt="Portrait of a young professional man of South Asian descent"
+                                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuDnE2DJTXwNtwr4tt5S1CNaX25cAB1rbB-hKfynbfWppRHD3OHXtQrEcRSciIjiTkUDDznLC6twyEeg17TDWu6C8hflN5EuMVyDw-1xbJQ6kh_p0CxJLdZqpTDiMWmhTfQuMnY6j51SXJwPVoenz15ylQMQ33-WBrT9GLhqD5uCel7uZe9hA1SdJHQWnbU9ZlQDlWltPEKdk2I9GExR-p_ACiVaZ0NIlgpQ0C66XYLethSCXOyT1_nRqXNgoLyMmP_4GbMKf3bFZ6oD" />
+                                    </div>
+                                    <h4 class="text-xl font-bold">Arun, 28</h4>
+                                    <p class="text-primary font-medium text-sm">Software Engineer | London</p>
+                                    <div class="mt-6 space-y-2 w-full text-left">
+                                        <div class="flex justify-between text-xs"><span>Tech Savvy</span><span
+                                                class="font-bold text-primary">90%</span></div>
+                                        <div class="w-full h-1 bg-slate-200 rounded-full overflow-hidden">
+                                            <div class="bg-primary h-full w-[90%]"></div>
+                                        </div>
+                                        <div class="flex justify-between text-xs mt-2"><span>Cultural Intent</span><span
+                                                class="font-bold text-primary">95%</span></div>
+                                        <div class="w-full h-1 bg-slate-200 rounded-full overflow-hidden">
+                                            <div class="bg-primary h-full w-[95%]"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="md:w-2/3 p-8 lg:p-12 space-y-6">
+                                    <div>
+                                        <h4 class="text-xs font-black text-slate-400 uppercase tracking-widest mb-2">
+                                            Goals</h4>
+                                        <p class="font-medium">Find a serious relationship with a partner who shares his
+                                            cultural heritage and professional ambitions.</p>
+                                    </div>
+                                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                                        <div>
+                                            <h4
+                                                class="text-xs font-black text-slate-400 uppercase tracking-widest mb-2">
+                                                Pain Points</h4>
+                                            <ul class="text-sm space-y-2 text-slate-600 dark:text-slate-400">
+                                                <li class="flex items-start gap-2"><span
+                                                        class="material-symbols-outlined text-red-500 text-sm mt-1">close</span>
+                                                    Buggy matching algorithms</li>
+                                                <li class="flex items-start gap-2"><span
+                                                        class="material-symbols-outlined text-red-500 text-sm mt-1">close</span>
+                                                    Ghosting on low-trust platforms</li>
+                                            </ul>
+                                        </div>
+                                        <div>
+                                            <h4
+                                                class="text-xs font-black text-slate-400 uppercase tracking-widest mb-2">
+                                                Needs</h4>
+                                            <ul class="text-sm space-y-2 text-slate-600 dark:text-slate-400">
+                                                <li class="flex items-start gap-2"><span
+                                                        class="material-symbols-outlined text-green-500 text-sm mt-1">check</span>
+                                                    Verified profile ecosystem</li>
+                                                <li class="flex items-start gap-2"><span
+                                                        class="material-symbols-outlined text-green-500 text-sm mt-1">check</span>
+                                                    Lightning-fast interface</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- User Journey & Architecture -->
+                    <section class="mb-20" id="design">
+                        <h2 class="text-3xl font-black mb-10">Strategy &amp; Architecture</h2>
+                        <!-- Design Goals -->
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
+                            <div class="bg-primary p-6 rounded-xl text-white">
+                                <span class="material-symbols-outlined text-3xl mb-4">speed</span>
+                                <h4 class="font-bold mb-2">Performance</h4>
+                                <p class="text-sm text-white/80">Reduce API latency to sub-200ms across all global
+                                    nodes.</p>
+                            </div>
+                            <div class="bg-slate-900 p-6 rounded-xl text-white">
+                                <span class="material-symbols-outlined text-3xl mb-4">verified_user</span>
+                                <h4 class="font-bold mb-2">High Trust</h4>
+                                <p class="text-sm text-white/80">Automated AI-driven verification to ensure 100% genuine
+                                    users.</p>
+                            </div>
+                            <div
+                                class="bg-white border border-slate-200 p-6 rounded-xl dark:bg-slate-800 dark:border-slate-700">
+                                <span class="material-symbols-outlined text-3xl mb-4 text-primary">diversity_3</span>
+                                <h4 class="font-bold mb-2">Intentionality</h4>
+                                <p class="text-sm text-slate-600 dark:text-slate-400">Discovery-first UI to move away
+                                    from gamified swiping.</p>
+                            </div>
+                        </div>
+                        <!-- IA Diagram -->
+                        <div class="space-y-8">
+                            <h3 class="text-xl font-bold">Information Architecture</h3>
+                            <div
+                                class="p-8 bg-slate-50 dark:bg-slate-900/50 rounded-2xl border border-slate-200 dark:border-slate-800 flex flex-wrap justify-center gap-4 items-center">
+                                <div
+                                    class="px-4 py-2 bg-white dark:bg-slate-800 rounded border border-primary text-primary font-bold shadow-sm">
+                                    Landing</div>
+                                <span class="material-symbols-outlined text-slate-400">arrow_forward</span>
+                                <div
+                                    class="px-4 py-2 bg-white dark:bg-slate-800 rounded border border-slate-200 text-slate-600 font-bold shadow-sm">
+                                    Smart Onboarding</div>
+                                <span class="material-symbols-outlined text-slate-400">arrow_forward</span>
+                                <div class="px-4 py-2 bg-primary text-white rounded font-bold shadow-md">Discovery Grid
+                                </div>
+                                <span class="material-symbols-outlined text-slate-400">arrow_forward</span>
+                                <div
+                                    class="px-4 py-2 bg-white dark:bg-slate-800 rounded border border-slate-200 text-slate-600 font-bold shadow-sm">
+                                    Match Hub</div>
+                                <span class="material-symbols-outlined text-slate-400">arrow_forward</span>
+                                <div
+                                    class="px-4 py-2 bg-white dark:bg-slate-800 rounded border border-slate-200 text-slate-600 font-bold shadow-sm">
+                                    Real-time Chat</div>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- Key Screens -->
+                    <section class="mb-20">
+                        <div class="flex flex-col md:flex-row justify-between items-end mb-10 gap-4">
+                            <div>
+                                <h2 class="text-3xl font-black mb-2">UI Design &amp; Key Screens</h2>
+                                <p class="text-slate-600 dark:text-slate-400">Mobile-First, Swipe-less, Clean Experience
+                                </p>
+                            </div>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                            <!-- Discovery Grid -->
+                            <div class="space-y-4">
+                                <div
+                                    class="bg-white dark:bg-slate-900 rounded-xl border border-slate-200 dark:border-slate-800 overflow-hidden shadow-lg group">
+                                    <div class="aspect-[9/16] relative bg-slate-100 dark:bg-slate-800">
+                                        <div class="p-4 flex flex-col h-full">
+                                            <div class="flex justify-between items-center mb-4">
+                                                <div class="flex gap-1">
+                                                    <div class="w-8 h-1 bg-primary rounded"></div>
+                                                    <div class="w-8 h-1 bg-slate-200 rounded"></div>
+                                                </div>
+                                                <span
+                                                    class="material-symbols-outlined text-slate-400">filter_list</span>
+                                            </div>
+                                            <div class="grid grid-cols-2 gap-2 flex-grow overflow-hidden">
+                                                <div class="bg-slate-200 dark:bg-slate-700 rounded-lg h-32"
+                                                    data-alt="Grid view of user profile 1"
+                                                    style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAdSQnawgzQ0l3rMfnNoQg7-PnXe2MQDWdrL56xlT63Iwt4V8QBXzgDzQZRKgShwJNDl-5zTupbhzaGv_ToFxhrhWEV6vQSaBZotVgSaGdozGcANJ5SQdrIQgla0AvfTS6MIr7zpL8L9YzzljMo_9EkPuL2ix6RRQbxl9tpiYGp_EtmvGpzaWTHatipm6zAN0M-o6fg3GcoDKNur3rvzp3lZkG3oB_930B97iBYiZ6B6rQCC1eyPM45N5MJueUu3Zk9_1notLHdYf9n'); background-size: cover;">
+                                                </div>
+                                                <div class="bg-slate-200 dark:bg-slate-700 rounded-lg h-32"
+                                                    data-alt="Grid view of user profile 2"
+                                                    style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuB6OFnqC7Sm3iYN7NzCVp1jycWNexVNpt0iSnPUaFv6wgila8p0mqq0Wg2wJo45gdQlMImcaf6KOqEbmmTEIcZ44dnM3lSKlMO5a5pHW6KxQl_RVRZTPCYuFUk3ROgm9KZXWFxWhYEU5pn20c_cPntCp3ZwHdjoCws2XpdPW9PsnZ4bduu_DGvvEbfYbFcJq4aJRYwAY4_7lonFv3_aW3FJeTy1y-MuSlr6onNEQDxm6PaeyICoj-wXjqHJeBYWVBte_-Xrsg_eUT89'); background-size: cover;">
+                                                </div>
+                                                <div class="bg-slate-200 dark:bg-slate-700 rounded-lg h-32"
+                                                    data-alt="Grid view of user profile 3"
+                                                    style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDzxIPm2BPdRwqNKZpB-CtV30-sVOLX_pv_wo5rZwEjahGgrddEIq-1ox8Pe3GqR3BJCxfBxTbhPQXbTMZtwu8MNV7fw0nt9l7mLgSGPh6_58G-61oy0nRMw_LcWs4y0fAB5r8YZh45UNz_hMUUjriceuCbT1-dZyvkJNuJxZWViQiZkjW4jb58lKkj46ECGEYv9N_O00DyswUgbWwEYPahFZIBt8qFzVnQ9JnPLUtko928rhDaEJps2hvDBBCxotN2K5fACZtGsLWf'); background-size: cover;">
+                                                </div>
+                                                <div class="bg-slate-200 dark:bg-slate-700 rounded-lg h-32"
+                                                    data-alt="Grid view of user profile 4"
+                                                    style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAGU79Bs3m6yIBPuh8NVrLj2DxAa8oJXSIWM7aqN_tmkOiVJf3c16Oma_7aLZG9sxTkecvVx-6Z3_gHOctkwtIAsXPVv2S5PugLHNPr9echLMicl_MCl6pb287aax7zSU2qFjrIQnTLVU_599pxF0vQpDvb7zFD51_tiN7q1bhPIimOYWLbhxyOiFDcgQv7wEObjuqUAxAn85BGr2w6nECVxSAgzAPb8G28ttov-bm_6nP3IBu233CQPLE1oVBf4FGEwwxY85xd_7Gf'); background-size: cover;">
+                                                </div>
+                                            </div>
+                                            <div
+                                                class="mt-4 p-3 bg-primary rounded-lg text-white text-center font-bold text-xs uppercase">
+                                                Discovery Engine</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="text-center">
+                                    <h5 class="font-bold">Discovery Dashboard</h5>
+                                    <p class="text-xs text-slate-500">Grid-based layout for intentional browsing</p>
+                                </div>
+                            </div>
+                            <!-- Match Profile -->
+                            <div class="space-y-4 md:-mt-8">
+                                <div
+                                    class="bg-white dark:bg-slate-900 rounded-xl border border-primary dark:border-primary/40 overflow-hidden shadow-2xl relative">
+                                    <div class="aspect-[9/16] relative bg-slate-100 dark:bg-slate-800 flex flex-col">
+                                        <div class="h-2/3 bg-cover bg-center"
+                                            data-alt="Individual detailed profile view"
+                                            style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCBjWTdmPyzDUdCwSPMLrL4fhCoT6lI6LmIYGsCdRTiOkiIzKEYlv7DhsiuMdekm4q-G0wW5mvlKK2lAroMpmpkwFP43FtWN68Q-Gxd8RJMbLvdeTpoItQjKai7bDFxcp43o5xFEi-ZRo5Wd9evkiSmjSM-hfl99_szDxCAuAoWqsAeyfcT7mvVpKIdrhhxyh7EX8zTABUjSFyegpJHiLFHHG3-22aL1tyur9C20joXVRrbreFWGhq_BG1r8PdpdFGLUvMDJG-HwNg-');">
+                                        </div>
+                                        <div class="h-1/3 p-4 bg-white dark:bg-slate-900 relative">
+                                            <div class="absolute -top-6 right-4 flex gap-2">
+                                                <button
+                                                    class="w-12 h-12 rounded-full bg-white shadow-xl flex items-center justify-center text-primary"><span
+                                                        class="material-symbols-outlined">favorite</span></button>
+                                            </div>
+                                            <h6 class="font-bold text-lg">Priya, 26</h6>
+                                            <p class="text-xs text-slate-500">Doctor • Toronto</p>
+                                            <div class="mt-2 flex flex-wrap gap-1">
+                                                <span
+                                                    class="px-2 py-0.5 bg-slate-100 dark:bg-slate-800 rounded text-[10px]">Verified</span>
+                                                <span
+                                                    class="px-2 py-0.5 bg-slate-100 dark:bg-slate-800 rounded text-[10px]">Classical
+                                                    Dancer</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="text-center">
+                                    <h5 class="font-bold">Detailed Profiling</h5>
+                                    <p class="text-xs text-slate-500">Rich storytelling over basic metrics</p>
+                                </div>
+                            </div>
+                            <!-- Chat Hub -->
+                            <div class="space-y-4">
+                                <div
+                                    class="bg-white dark:bg-slate-900 rounded-xl border border-slate-200 dark:border-slate-800 overflow-hidden shadow-lg">
+                                    <div class="aspect-[9/16] relative bg-slate-100 dark:bg-slate-800 flex flex-col">
+                                        <div
+                                            class="p-4 border-b border-slate-200 dark:border-slate-800 flex items-center gap-3 bg-white dark:bg-slate-900">
+                                            <div class="w-8 h-8 rounded-full bg-primary/20"></div>
+                                            <div class="flex-1 h-3 bg-slate-200 rounded w-1/2"></div>
+                                            <span class="material-symbols-outlined text-slate-400">videocam</span>
+                                        </div>
+                                        <div class="flex-grow p-4 space-y-4">
+                                            <div
+                                                class="w-2/3 h-10 bg-slate-200 dark:bg-slate-700 rounded-xl rounded-bl-none">
+                                            </div>
+                                            <div class="w-2/3 h-10 bg-primary/10 rounded-xl rounded-br-none ml-auto">
+                                            </div>
+                                            <div
+                                                class="w-1/2 h-10 bg-slate-200 dark:bg-slate-700 rounded-xl rounded-bl-none">
+                                            </div>
+                                        </div>
+                                        <div
+                                            class="p-3 bg-white dark:bg-slate-900 border-t border-slate-200 dark:border-slate-800">
+                                            <div
+                                                class="flex items-center gap-2 px-3 py-2 bg-slate-100 dark:bg-slate-800 rounded-full">
+                                                <div class="flex-1 text-[10px] text-slate-400">Type a message...</div>
+                                                <span class="material-symbols-outlined text-primary text-sm">send</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="text-center">
+                                    <h5 class="font-bold">Real-time Chat</h5>
+                                    <p class="text-xs text-slate-500">Sub-100ms message delivery</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- Usability & Decisions -->
+                    <section class="mb-20 grid grid-cols-1 md:grid-cols-2 gap-12">
+                        <div>
+                            <h2 class="text-2xl font-black mb-6">Design Decisions</h2>
+                            <div class="space-y-6">
+                                <div class="flex gap-4">
+                                    <div
+                                        class="w-10 h-10 shrink-0 bg-primary/10 rounded-lg flex items-center justify-center text-primary">
+                                        <span class="material-symbols-outlined">touch_app</span>
+                                    </div>
+                                    <div>
+                                        <h5 class="font-bold">Swipe-less Discovery</h5>
+                                        <p class="text-sm text-slate-600 dark:text-slate-400">We moved from swiping to a
+                                            grid discovery to promote "intentional browsing." This reduced accidental
+                                            matches and increased the high-intent conversation rate by 35%.</p>
+                                    </div>
+                                </div>
+                                <div class="flex gap-4">
+                                    <div
+                                        class="w-10 h-10 shrink-0 bg-primary/10 rounded-lg flex items-center justify-center text-primary">
+                                        <span class="material-symbols-outlined">bolt</span>
+                                    </div>
+                                    <div>
+                                        <h5 class="font-bold">Automated Auditing</h5>
+                                        <p class="text-sm text-slate-600 dark:text-slate-400">Replaced manual profile
+                                            vetting with an automated AI system. This reduced onboarding friction by 40%
+                                            while maintaining the "high-trust" community standard.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-8 bg-slate-900 rounded-2xl text-white">
+                            <h2 class="text-2xl font-black mb-6">Lessons Learned</h2>
+                            <ul class="space-y-4">
+                                <li class="flex gap-3">
+                                    <span class="material-symbols-outlined text-primary">check_circle</span>
+                                    <p class="text-sm text-slate-300"><strong class="text-white">Layer
+                                            Decoupling:</strong> Decoupling the caching layer (Redis) from the main
+                                        matching engine was critical for real-time performance at scale.</p>
+                                </li>
+                                <li class="flex gap-3">
+                                    <span class="material-symbols-outlined text-primary">check_circle</span>
+                                    <p class="text-sm text-slate-300"><strong class="text-white">Cultural
+                                            Context:</strong> Cultural-specific fields (heritage, languages) shouldn't
+                                        be secondary; they are the primary drivers of compatibility in this niche.</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+                    <!-- Results Section -->
+                    <section class="mb-20" id="results">
+                        <div class="bg-primary p-12 rounded-3xl text-white text-center">
+                            <h2 class="text-3xl font-black mb-10">Quantifiable Success</h2>
+                            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                                <div>
+                                    <p class="text-5xl font-black mb-2">20k+</p>
+                                    <p class="text-primary-foreground/80 font-medium uppercase tracking-widest text-xs">
+                                        Active Daily Users</p>
+                                </div>
+                                <div>
+                                    <p class="text-5xl font-black mb-2">99.9%</p>
+                                    <p class="text-primary-foreground/80 font-medium uppercase tracking-widest text-xs">
+                                        System Uptime</p>
+                                </div>
+                                <div>
+                                    <p class="text-5xl font-black mb-2">40%</p>
+                                    <p class="text-primary-foreground/80 font-medium uppercase tracking-widest text-xs">
+                                        Reduction in Operational Costs</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- Future Improvements -->
+                    <section class="mb-20">
+                        <h2 class="text-2xl font-black mb-8">Looking Ahead</h2>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div
+                                class="flex items-center gap-6 p-6 bg-white dark:bg-background-dark border border-slate-200 dark:border-slate-800 rounded-xl">
+                                <span class="material-symbols-outlined text-4xl text-primary">smartphone</span>
+                                <div>
+                                    <h5 class="font-bold">Native Apps</h5>
+                                    <p class="text-sm text-slate-500">Expanding the web-first experience into dedicated
+                                        iOS and Android native platforms.</p>
+                                </div>
+                            </div>
+                            <div
+                                class="flex items-center gap-6 p-6 bg-white dark:bg-background-dark border border-slate-200 dark:border-slate-800 rounded-xl">
+                                <span class="material-symbols-outlined text-4xl text-primary">video_stable</span>
+                                <div>
+                                    <h5 class="font-bold">AI Video Intros</h5>
+                                    <p class="text-sm text-slate-500">Short video prompts to bring more personality and
+                                        authenticity to the discovery process.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </main>
+            <!-- Footer -->
+            <footer
+                class="border-t border-slate-200 dark:border-slate-800 py-12 px-6 lg:px-40 bg-white dark:bg-background-dark">
+                <div class="flex flex-col md:flex-row justify-between items-center gap-8">
+                    <div class="flex items-center gap-3">
+                        <div class="size-6 text-primary">
+                            <svg fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M24 4C25.7818 14.2173 33.7827 22.2182 44 24C33.7827 25.7818 25.7818 33.7827 24 44C22.2182 33.7827 14.2173 25.7818 4 24C14.2173 22.2182 22.2182 14.2173 24 4Z"
+                                    fill="currentColor"></path>
+                            </svg>
+                        </div>
+                        <span
+                            class="font-bold text-slate-900 dark:text-slate-100 uppercase tracking-tighter">mytamildate
+                            Case Study</span>
+                    </div>
+                    <div class="flex gap-6">
+                        <a class="text-slate-400 hover:text-primary transition-colors" href="#"><span
+                                class="material-symbols-outlined">language</span></a>
+                        <a class="text-slate-400 hover:text-primary transition-colors" href="#"><span
+                                class="material-symbols-outlined">hub</span></a>
+                        <a class="text-slate-400 hover:text-primary transition-colors" href="#"><span
+                                class="material-symbols-outlined">alternate_email</span></a>
+                    </div>
+                    <p class="text-slate-500 text-xs">© 2024. Designed by Senior Product Developer.</p>
+                </div>
+            </footer>
+        </div>
+    </div>
+</body>
+
+</html>
